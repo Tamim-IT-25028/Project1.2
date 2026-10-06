@@ -10,7 +10,7 @@
 - [Features](#-features)
 - [How It Works (System Architecture)](#-how-it-works-system-architecture)
 - [Project Directory Structure](#-project-directory-structure)
-- [Prerequisites & System Requirements](#-prerequisites--system-requirements)
+- [Prerequisites and System Requirements](#-prerequisites-and-system-requirements)
 - [How to Build and Run (Usage Guide)](#-how-to-build-and-run-usage-guide)
   - [Option 1: Quick Modular Setup](#option-1-quick-modular-setup)
   - [Option 2: Ultimate Standalone All-In-One Executable (`.exe`)](#option-2-ultimate-standalone-all-in-one-executable-exe)
@@ -100,16 +100,13 @@ cyber-scan/
 
 ---
 
-## 🛠️ Prerequisites & System Requirements
+## 🛠️ Prerequisites and System Requirements
 
 * **Operating System**: Windows 10 or Windows 11 (64-bit).
 * **Compiler**: GCC / MinGW-w64 with support for **C++17** or higher (`g++`).
 * **Required System Libraries**:
-* `Winsock2` (`ws2tcpip.h` / `-lws2_32` linker flag)
-* C++ Threading Library (`<thread>`, `<mutex>`)
-
-
-
+  * `Winsock2` (`ws2tcpip.h` / `-lws2_32` linker flag)
+  * C++ Threading Library (`<thread>`, `<mutex>`)
 ---
 
 ## 🚀 How to Build and Run (Usage Guide)
