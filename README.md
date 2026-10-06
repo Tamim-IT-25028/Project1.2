@@ -1,4 +1,3 @@
-```
 # ⚡ CyberScan - C++ Multithreaded Port Scanner & Security Dashboard
 
 **CyberScan** is a high-performance, multithreaded network security auditing application built with a native C++17 Winsock engine backend and a futuristic, neon-styled web frontend. It bridges low-level C++ network socket programming with modern web UI technologies to deliver fast, real-time port scanning, service banner detection, and security threat evaluation.
@@ -72,8 +71,6 @@
                          ┌───────────────────────┐
                          │ vector<ScanResult>    │
                          └───────────────────────┘
-
-```
 
 1. **API Handler**: The user sends scan parameters (`ip`, `startPort`, `endPort`, `threads`) via HTTP GET to `/scan`.
 2. **Batch Dispatcher**: The C++ engine splits the port range into chunks defined by the `threads` parameter.
