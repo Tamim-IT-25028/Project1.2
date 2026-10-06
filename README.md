@@ -10,7 +10,7 @@
 - [Features](#-features)
 - [How It Works (System Architecture)](#-how-it-works-system-architecture)
 - [Project Directory Structure](#-project-directory-structure)
-- [Prerequisites and System Requirements](#-prerequisites-and-system-requirements)
+- [Prerequisites and System Requirements](#prerequisites-and-system-requirements)
 - [How to Build and Run (Usage Guide)](#-how-to-build-and-run-usage-guide)
   - [Option 1: Quick Modular Setup](#option-1-quick-modular-setup)
   - [Option 2: Ultimate Standalone All-In-One Executable (`.exe`)](#option-2-ultimate-standalone-all-in-one-executable-exe)
@@ -18,7 +18,7 @@
 - [Detailed Code Architecture](#-detailed-code-architecture)
 - [REST API Reference](#-rest-api-reference)
 - [Troubleshooting & FAQ](#-troubleshooting--faq)
-- [Legal & Ethical Disclaimer](#-legal--ethical-disclaimer)
+- [Legal & Ethical Disclaimer](#legal--ethical-disclaimer)
 
 ---
 
@@ -100,7 +100,7 @@ cyber-scan/
 
 ---
 
-## 🛠️ Prerequisites and System Requirements
+## Prerequisites and System Requirements
 
 * **Operating System**: Windows 10 or Windows 11 (64-bit).
 * **Compiler**: GCC / MinGW-w64 with support for **C++17** or higher (`g++`).
@@ -294,7 +294,7 @@ Executes a multithreaded TCP port scan against specified target parameters.
 
 ---
 
-## ⚠️ Legal & Ethical Disclaimer
+## Legal & Ethical Disclaimer
 ---
 
 CyberScan is created strictly for **educational purposes, defensive security auditing, and local network administrative testing**.
