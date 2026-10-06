@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberScan - Beginner Dashboard</title>
+    <!-- Connect to our CSS style file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Top Header -->
+        <header class="header">
+            <h1 class="title">⚡ CYBERSCAN</h1>
+            <p class="subtitle">C++ Port Scanner & Vulnerability Checker</p>
+        </header>
+
+        <!-- Input Form Section -->
+        <section class="card">
+            <h2>1. Scan Settings</h2>
+            
+            <div class="form-group">
+                <label for="targetIp">Target IP Address:</label>
+                <input type="text" id="targetIp" value="127.0.0.1">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="startPort">Start Port:</label>
+                    <input type="number" id="startPort" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="endPort">End Port:</label>
+                    <input type="number" id="endPort" value="1024">
+                </div>
+
+                <div class="form-group">
+                    <label for="threadCount">Threads (Speed):</label>
+                    <select id="threadCount">
+                        <option value="10">10 (Slow)</option>
+                        <option value="25" selected>25 (Medium)</option>
+                        <option value="50">50 (Fast)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="scanBtn" class="btn btn-primary" onclick="startScan()">▶ Start Scan</button>
+        </section>
+
+        <!-- Results Table Section -->
+        <section class="card">
+            <h2>2. Discovered Open Ports</h2>
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Port</th>
+                            <th>Protocol</th>
+                            <th>Service</th>
+                            <th>Banner Info</th>
+                            <th>Risk Level</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                        <tr>
+                            <td colspan="5" class="empty-msg">No scan running yet. Click "Start Scan" above!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Live Terminal Log Section -->
+        <section class="card">
+            <h2>3. Live Terminal Log</h2>
+            <div id="logTerminal" class="terminal">
+                <div class="log-info">[READY] System ready. Waiting for user command...</div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Connect to our JavaScript logic file -->
+    <script src="script.js"></script>
+</body>
+</html>

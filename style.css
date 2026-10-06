@@ -1,0 +1,179 @@
+/* --- EASY-TO-READ COLOR PALETTE --- */
+:root {
+    --bg-dark: #0f172a;        /* Main dark background */
+    --card-dark: #1e293b;      /* Section box background */
+    --border-color: #334155;   /* Subtle border outline */
+    --text-white: #f8fafc;     /* Main readable text */
+    --text-muted: #94a3b8;     /* Secondary muted text */
+    
+    /* Vibrant Accent Colors */
+    --neon-cyan: #38bdf8;
+    --neon-green: #4ade80;
+    --neon-red: #f87171;
+    --neon-purple: #c084fc;
+}
+
+/* Base Body Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 10px;
+}
+
+.title {
+    font-size: 32px;
+    margin: 0;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+    -webkit-background-clip: text;
+    background-clip: text; /* Standard CSS property */
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Cards (Boxes) */
+.card {
+    background-color: var(--card-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: var(--neon-cyan);
+}
+
+/* Forms and Inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+input, select {
+    background-color: #0f172a;
+    border: 1px solid var(--border-color);
+    color: var(--text-white);
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--neon-cyan);
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: var(--neon-cyan);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #0284c7;
+    color: #fff;
+}
+
+/* Table Styling */
+.table-box {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+}
+
+.empty-msg {
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* Risk Badges */
+.badge {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-low { background-color: rgba(74, 222, 128, 0.2); color: var(--neon-green); }
+.badge-medium { background-color: rgba(192, 132, 252, 0.2); color: var(--neon-purple); }
+.badge-high { background-color: rgba(248, 113, 113, 0.2); color: var(--neon-red); }
+
+/* Terminal Output Box */
+.terminal {
+    background-color: #050811;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px;
+    height: 120px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.log-info { color: var(--neon-cyan); }
+.log-success { color: var(--neon-green); }
+.log-error { color: var(--neon-red); }
