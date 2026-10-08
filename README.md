@@ -7,11 +7,11 @@
 
 ## 📋 Table of Contents
 
-- [Features](#-features)
+- [Features](#features)
 - [How It Works (System Architecture)](#-how-it-works-system-architecture)
 - [Project Directory Structure](#-project-directory-structure)
 - [Prerequisites and System Requirements](#prerequisites-and-system-requirements)
-- [How to Build and Run (Usage Guide)](#-how-to-build-and-run-usage-guide)
+- [How to Build and Run (Usage Guide)](#how-to-build-and-run-usage-guide)
   - [Option 1: Quick Modular Setup](#option-1-quick-modular-setup)
   - [Option 2: Ultimate Standalone All-In-One Executable (`.exe`)](#option-2-ultimate-standalone-all-in-one-executable-exe)
 - [How to Use the Dashboard](#-how-to-use-the-dashboard)
@@ -22,16 +22,16 @@
 
 ---
 
-## ✨ Features
+##  Features
 
-* **⚡ Multithreaded C++ Engine**: Spawns non-blocking thread pools (`std::thread`) to scan hundreds of ports concurrently in seconds.
-* **🔒 Thread-Safe Execution**: Employs mutual exclusion primitives (`std::mutex` and `std::lock_guard`) to prevent race conditions during result aggregation.
-* **📡 Low-Level Socket Operations**: Utilizes native Windows Sockets (`Winsock2`) with configurable connection timeouts (1000ms) to bypass non-responsive or dropped packets.
-* **🛠️ Automatic Service Detection**: Maps discovered open ports to standard protocols (HTTP, HTTPS, FTP, SSH, MySQL, etc.) and analyzes banner output.
-* **🎯 Threat & Risk Classification**: Automatically evaluates open ports and assigns threat ratings (`Low`, `Medium`, `High`, `Critical`).
-* **🌐 Embedded HTTP REST API**: Built on `httplib.h` serving a JSON API on port `8080`.
-* **📊 Modern Cyberpunk Interface**: Dark-mode glassmorphic dashboard featuring live terminal streaming, interactive search/filter, progress feedback, and data export options.
-* **📦 Single-File Executable Distribution**: Embeds the full frontend (HTML, CSS, JS) into C++ memory, creating a single `.exe` file that boots the server and automatically pops open your default web browser on launch.
+* ** Multithreaded C++ Engine**: Spawns non-blocking thread pools (`std::thread`) to scan hundreds of ports concurrently in seconds.
+* ** Thread-Safe Execution**: Employs mutual exclusion primitives (`std::mutex` and `std::lock_guard`) to prevent race conditions during result aggregation.
+* ** Low-Level Socket Operations**: Utilizes native Windows Sockets (`Winsock2`) with configurable connection timeouts (1000ms) to bypass non-responsive or dropped packets.
+* **Automatic Service Detection**: Maps discovered open ports to standard protocols (HTTP, HTTPS, FTP, SSH, MySQL, etc.) and analyzes banner output.
+* ** Threat & Risk Classification**: Automatically evaluates open ports and assigns threat ratings (`Low`, `Medium`, `High`, `Critical`).
+* **Embedded HTTP REST API**: Built on `httplib.h` serving a JSON API on port `8080`.
+* ** Modern Cyberpunk Interface**: Dark-mode glassmorphic dashboard featuring live terminal streaming, interactive search/filter, progress feedback, and data export options.
+* ** Single-File Executable Distribution**: Embeds the full frontend (HTML, CSS, JS) into C++ memory, creating a single `.exe` file that boots the server and automatically pops open your default web browser on launch.
 
 ---
 
@@ -109,7 +109,7 @@ cyber-scan/
   * C++ Threading Library (`<thread>`, `<mutex>`)
 ---
 
-## 🚀 How to Build and Run (Usage Guide)
+##  How to Build and Run (Usage Guide)
 
 ### Option 1: Quick Modular Setup
 
